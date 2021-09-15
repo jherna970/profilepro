@@ -1,0 +1,33 @@
+.body {
+  display: grid;
+  grid-template-columns: 1rf 1rf 1rf 1rf;
+  grid-template-rows: repeat(6, 200px);
+  grid-template-areas:
+    "header header aside aside"
+    "header header article article "
+    "details details details details"
+    "footer footer footer footer"
+    "summary summary summary summary";
+}
+.header {
+  grid-area: header;
+}
+.aside {
+  grid-area: aside;
+}
+.footer {
+  grid-area: footer;
+}
+.article {
+  grid-area: article;
+}
+.details {
+  grid-area: details;
+}
+.summary {
+  grid-area: summary;
+}
+div {
+  border: 1em double black;
+  color: whitesmoke;
+}
